@@ -1,6 +1,6 @@
 # Added provider AWS version constraint. `max_session_duration` is supported on 1.14.0
 provider "aws" {
-  version = "~> 1.14"
+  version = ">= 1.14"
 
   # region is added to prevent consumers getting region prompts (one prompt for each usage)
   region = "${var.region}"
